@@ -1,0 +1,68 @@
+// 自定义主题色
+@main-color:#f23030;
+
+* {
+    padding: 0;
+    margin: 0;
+    // 在移动端不允许出现横向滚动条,不能让padding或者boeder撑大盒子
+    box-sizing: border-box;
+    // 清除移动端点住(按住) 高亮颜色
+    -webkit-tap-highlight-color: transparent;
+
+
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+li {
+    list-style: none;
+}
+i,em {
+    font-weight: normal;
+}
+input  {
+    outline: 0;
+    border: 0;
+}
+img {
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: normal;
+}
+
+// 公共样式
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.w50{
+    width: 50%;
+}
+
+.bl{
+    border-left: 1px solid #ccc;
+}
+.bt{
+    border-top: 1px solid #ccc;
+}
+.bb{
+    border-bottom: 1px solid #ccc;
+}
+.br{
+    border-right: 1px solid #ccc;
+}

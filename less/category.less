@@ -1,0 +1,125 @@
+@import 'base.less';
+
+
+#topbar {
+    height: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    position: absolute;
+    width: 100%;
+    background-color: #eee;
+        .icon-back {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            background-image: url("../images/sprites.png");
+            background-size:200px 200px;
+            background-position: -20px 0;
+            position: absolute;
+            background-origin: content-box;
+            background-clip: content-box;
+            left: 0px;
+            top: 0px;
+
+    }
+    >form {
+        margin-right: 40px;
+        margin-left: 40px;
+        >input {
+        width: 100%;
+        height: 30px;
+        margin-top: 5px;
+        padding-left: 15px;
+            border-radius: 5px;
+        }
+    }
+        .icon-menu {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+            background-image: url("../images/sprites.png");
+            background-size:200px 200px;
+            background-position: -60px 0;
+            position: absolute;
+            background-origin: content-box;
+            background-clip: content-box;
+            right: 0px;
+            top: 0px;
+
+        }
+}
+
+html,body {
+    height: 100%;
+}
+
+#category {
+    padding-top: 40px;
+    height: 100%;
+    .category-left {
+        float: left;
+        overflow: hidden;
+        height: 100%;
+        >ul {
+            >li {
+                &.active{
+                    >a {
+                        background-color: #fff;
+                        color: red;;
+                    }
+                }
+                >a {
+                    display: block;
+                    width: 100px;
+                    height: 50px;
+                    font-size: 14px;
+                    border-bottom: 1px solid #000;
+                    border-right: 1px solid #000;
+                    text-align: center;
+                    line-height: 50px;
+                    background-color: #eee;
+                }
+            }
+        }
+    }
+    .category-right {
+        padding: 10px;
+        margin-left: 100px;
+        overflow: hidden;
+        height: 100%;
+        position: relative;
+        .product-list {
+            >a {
+
+                display: block;
+                width: 100%;
+                >img {
+                    width: 100%;
+
+                }
+            }
+            .product {
+                >h4 {
+                    font-size: 16px;
+                }
+                >ul {
+                    >li {
+                        float: left;
+                        width: 33.33%;
+                        text-align: center;
+                        >a {
+                            display: block;
+                            >img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                            >p {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
